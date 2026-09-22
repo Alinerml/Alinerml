@@ -23,7 +23,7 @@ jobs:
         config_timezone: Asia/Shanghai
         base: header, activity, community, repositories
         plugin_traffic: false
-        plugin_lines: true
+        plugin_lines: false
         plugin_introduction: true
         plugin_gists: true
         plugins_errors_fatal: true
