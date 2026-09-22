@@ -1,6 +1,9 @@
 name: Contribution calendar cards
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/calendars.py', '.github/workflows/calendars.yml']
   schedule:
     - cron: '35 1 * * *'
 permissions:
@@ -11,23 +14,19 @@ concurrency:
 jobs:
   calendars:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 10
     steps:
-      - name: Full year isometric calendar
-        uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          user: Alinerml
-          filename: profile/isocalendar.svg
-          base: ''
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-      - name: All years contribution calendar
-        uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          user: Alinerml
-          filename: profile/calendar-full.svg
-          base: ''
-          plugin_calendar: yes
-          plugin_calendar_limit: 0
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - name: Generate and validate public contribution calendars
+        run: python3 scripts/calendars.py
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish calendar images
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add profile/isocalendar.svg profile/calendar-full.svg
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Refresh contribution calendar cards'
+          git pull --rebase
+          git push
