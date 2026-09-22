@@ -1,0 +1,109 @@
+name: Update profile visuals
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/profile.yml'
+  schedule:
+    - cron: '23 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-visuals
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+
+      - name: Generate contribution snake
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            profile/snake.svg
+            profile/snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate 3D contribution city
+        uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39 # v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Generate light stats card
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&include_all_commits=true&hide_border=true&card_width=490&bg_color=00000000&title_color=36bcf7&icon_color=36bcf7&text_color=24292f
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: 'true'
+
+      - name: Generate dark stats card
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&include_all_commits=true&hide_border=true&card_width=490&bg_color=00000000&title_color=36bcf7&icon_color=36bcf7&text_color=c9d1d9
+          path: profile/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: 'true'
+
+      - name: Generate light languages card
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&card_width=490&bg_color=00000000&title_color=36bcf7&icon_color=36bcf7&text_color=24292f
+          path: profile/languages.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: 'true'
+
+      - name: Generate dark languages card
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&card_width=490&bg_color=00000000&title_color=36bcf7&icon_color=36bcf7&text_color=c9d1d9
+          path: profile/languages-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: 'true'
+
+      - name: Verify generated images
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          required = [
+              'profile/snake.svg', 'profile/snake-dark.svg',
+              'profile/stats.svg', 'profile/stats-dark.svg',
+              'profile/languages.svg', 'profile/languages-dark.svg',
+              'profile-3d-contrib/profile-gitblock.svg',
+              'profile-3d-contrib/profile-night-rainbow.svg',
+          ]
+          for name in required:
+              p = Path(name)
+              assert p.stat().st_size > 200, name
+              root = ET.parse(p).getroot()
+              assert root.tag.endswith('svg'), name
+              assert 'Something went wrong' not in p.read_text(), name
+          print(f'Validated {len(required)} SVG images')
+          PY
+
+      - name: Commit generated images
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add profile profile-3d-contrib
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m 'chore: refresh profile visuals'
+          git pull --rebase origin main
+          git push origin HEAD:main

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="76" viewBox="0 0 640 76" role="img" aria-labelledby="title">
+<title id="title">Hello, World! 我是 Alinerml，欢迎来到我的 GitHub</title>
+<defs><clipPath id="typing"><rect x="48" y="8" width="0" height="38"><animate attributeName="width" values="0;544;544;0" keyTimes="0;0.34;0.88;1" dur="7s" repeatCount="indefinite"/></rect></clipPath></defs>
+<g clip-path="url(#typing)"><text x="320" y="35" text-anchor="middle" font-family="Consolas,Monaco,monospace" font-size="26" font-weight="600" fill="#36bcf7">console.log(&quot;Hello, World!&quot;);</text></g>
+<text x="320" y="64" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#8b949e">我是 Alinerml，欢迎来到我的 GitHub 👋</text>
+</svg>
