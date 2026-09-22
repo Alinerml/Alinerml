@@ -24,8 +24,8 @@
 
 # 🙋 Hello
 
-<table>
-<tr><td>
+<table width="100%">
+<tr><td width="1000">
 
 ### 🤺 About Me
 
@@ -38,7 +38,7 @@
 **Keep learning. Keep building.**
 
 </td></tr>
-<tr><td>
+<tr><td width="1000">
 
 ### 🚀 Code & Projects
 

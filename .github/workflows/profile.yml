@@ -43,7 +43,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&include_all_commits=true&hide_border=true&card_width=490&bg_color=00000000&title_color=36bcf7&icon_color=36bcf7&text_color=24292f
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&include_all_commits=true&disable_animations=true&hide_border=true&card_width=490&bg_color=00000000&title_color=36bcf7&icon_color=36bcf7&text_color=24292f
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: 'true'
@@ -52,7 +52,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&include_all_commits=true&hide_border=true&card_width=490&bg_color=00000000&title_color=36bcf7&icon_color=36bcf7&text_color=c9d1d9
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&include_all_commits=true&disable_animations=true&hide_border=true&card_width=490&bg_color=00000000&title_color=36bcf7&icon_color=36bcf7&text_color=c9d1d9
           path: profile/stats-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: 'true'
@@ -61,7 +61,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&card_width=490&bg_color=00000000&title_color=36bcf7&icon_color=36bcf7&text_color=24292f
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&disable_animations=true&hide_border=true&card_width=490&bg_color=00000000&title_color=36bcf7&icon_color=36bcf7&text_color=24292f
           path: profile/languages.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: 'true'
@@ -70,7 +70,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&card_width=490&bg_color=00000000&title_color=36bcf7&icon_color=36bcf7&text_color=c9d1d9
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&disable_animations=true&hide_border=true&card_width=490&bg_color=00000000&title_color=36bcf7&icon_color=36bcf7&text_color=c9d1d9
           path: profile/languages-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: 'true'
