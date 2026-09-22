@@ -1,0 +1,33 @@
+name: Contribution calendar cards
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 1 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: profile-visuals
+  cancel-in-progress: false
+jobs:
+  calendars:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Full year isometric calendar
+        uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: Alinerml
+          filename: profile/isocalendar.svg
+          base: ''
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+      - name: All years contribution calendar
+        uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: Alinerml
+          filename: profile/calendar-full.svg
+          base: ''
+          plugin_calendar: yes
+          plugin_calendar_limit: 0
