@@ -21,6 +21,8 @@ def save(name,parts):
     ET.fromstring(s)
     assert '<rect' in s or '<polygon' in s
     Path('profile',name).write_text(s)
+    destination=Path('github-metrics');destination.mkdir(exist_ok=True)
+    destination.joinpath({'isocalendar.svg':'isocalendar.fullyear.svg','calendar-full.svg':'calendar.full.svg'}[name]).write_text(s)
 created=int(query('query { user(login: "%s") { createdAt } }'%USER)['createdAt'][:4])
 years=list(range(today.year,created-1,-1))
 full=base(44+len(years)*82)
