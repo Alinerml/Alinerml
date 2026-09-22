@@ -12,16 +12,15 @@
 
 <div>
   <a href="https://github.com/Alinerml"><img src="https://img.shields.io/badge/GitHub-Alinerml-blue" /></a>&emsp;
-  <img src="https://img.shields.io/badge/Website-尚未关联-8c36db" alt="个人博客尚未关联" />&emsp;
   <img src="https://img.shields.io/badge/Social-尚未关联-07c160" alt="社交账号尚未关联" />&emsp;
   <img src="https://komarev.com/ghpvc/?username=Alinerml&label=Views&color=orange&style=flat" alt="访问量统计" />&emsp;
   <img src="https://img.shields.io/badge/WakaTime-尚未关联-blue" alt="WakaTime 尚未关联" />
 </div>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile/snake.svg" />
-  <img alt="github-snake" src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile/snake-dark.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile/snake-dark.svg?v=20260922-2" />
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile/snake.svg?v=20260922-2" />
+  <img alt="github-snake" src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile/snake-dark.svg?v=20260922-2" />
 </picture>
 
 <p><img src="https://img.shields.io/badge/Sponsors-尚未关联-f4ca64" alt="赞助信息尚未关联" /></p>
@@ -51,17 +50,7 @@
 
 </td></tr>
 
-<tr><td>
 
-### 📃 Recent Blog
-
-<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/astronaut.png" />
-
-<!-- feed start -->
-个人博客尚未关联。
-<!-- feed end -->
-
-</td></tr>
 
 
 
@@ -100,7 +89,7 @@ WakaTime 已注册，编程活动采集尚未接通。
 </picture>
 <img align="right" width="150"  src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/right.png" />
 
-<img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/base.svg" />
+<img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/base.svg?v=20260922-2" />
 
 <table>
   <tr>
@@ -127,8 +116,8 @@ WakaTime 已注册，编程活动采集尚未接通。
 
 <table>
   <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/wakatime.svg" width="500" alt="WakaTime 尚未关联" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/wakatime.svg" width="500" alt="WakaTime 尚未关联" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/wakatime.svg?v=20260922-2" width="500" alt="WakaTime 尚未关联" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/wakatime.svg?v=20260922-2" width="500" alt="WakaTime 尚未关联" /></td>
   </tr>
 </table>
 
@@ -198,9 +187,9 @@ WakaTime 已注册，编程活动采集尚未接通。
 <img height="100" width="100" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/github.webp">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile-3d-contrib/profile-night-rainbow.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile-3d-contrib/profile-gitblock.svg" />
-  <img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile-3d-contrib/profile-night-rainbow.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile-3d-contrib/profile-night-rainbow.svg?v=20260922-2" />
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile-3d-contrib/profile-gitblock.svg?v=20260922-2" />
+  <img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile-3d-contrib/profile-night-rainbow.svg?v=20260922-2" />
 </picture>
 
 </div>
@@ -213,30 +202,30 @@ WakaTime 已注册，编程活动采集尚未接通。
 
 <table>
   <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/people.followers.svg" alt="people.followers" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/people.followers.svg?v=20260922-2" alt="people.followers" /></td>
   </tr>
 </table>
 
 <table>
   <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/languages.indepth.svg" alt="languages.indepth" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/reactions.svg" alt="reactions" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/languages.indepth.svg?v=20260922-2" alt="languages.indepth" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/reactions.svg?v=20260922-2" alt="reactions" /></td>
   </tr>
   <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/followup.indepth.svg" alt="followup.indepth" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/repositories.pinned.svg" alt="repositories.pinned" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/followup.indepth.svg?v=20260922-2" alt="followup.indepth" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/repositories.pinned.svg?v=20260922-2" alt="repositories.pinned" /></td>
   </tr>
   <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/wakatime.svg" alt="wakatime" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/stackoverflow.svg" alt="stackoverflow" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/wakatime.svg?v=20260922-2" alt="wakatime" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/stackoverflow.svg?v=20260922-2" alt="stackoverflow" /></td>
   </tr>
   <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/stars.svg" alt="stars" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/stargazers.chartist.svg" alt="stargazers.chartist" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/stars.svg?v=20260922-2" alt="stars" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/stargazers.chartist.svg?v=20260922-2" alt="stargazers.chartist" /></td>
   </tr>
   <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/isocalendar.fullyear.svg" alt="isocalendar.fullyear" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/calendar.full.svg" alt="calendar.full" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/isocalendar.fullyear.svg?v=20260922-2" alt="isocalendar.fullyear" /></td>
+    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/calendar.full.svg?v=20260922-2" alt="calendar.full" /></td>
   </tr>
 </table>
 
