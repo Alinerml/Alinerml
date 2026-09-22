@@ -1,6 +1,10 @@
 name: Reference profile metrics
 'on':
-  workflow_dispatch: null
+  workflow_dispatch:
+    inputs:
+      only_base:
+        type: boolean
+        default: false
   schedule:
   - cron: 0 0 * * *
 permissions:
@@ -57,6 +61,7 @@ jobs:
         retries: 0
         optimize: svg
         debug: true
+    if: ${{ !inputs.only_base }}
   card-2:
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -77,6 +82,7 @@ jobs:
         retries: 0
         optimize: svg
         debug: true
+    if: ${{ !inputs.only_base }}
   card-3:
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -97,6 +103,7 @@ jobs:
         retries: 0
         optimize: svg
         debug: true
+    if: ${{ !inputs.only_base }}
   card-4:
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -117,6 +124,7 @@ jobs:
         retries: 0
         optimize: svg
         debug: true
+    if: ${{ !inputs.only_base }}
   card-5:
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -138,6 +146,7 @@ jobs:
         retries: 0
         optimize: svg
         debug: true
+    if: ${{ !inputs.only_base }}
   card-6:
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -160,6 +169,7 @@ jobs:
         retries: 0
         optimize: svg
         debug: true
+    if: ${{ !inputs.only_base }}
   card-7:
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -180,3 +190,4 @@ jobs:
         retries: 0
         optimize: svg
         debug: true
+    if: ${{ !inputs.only_base }}
