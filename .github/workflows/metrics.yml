@@ -1,0 +1,114 @@
+name: Reference profile metrics
+'on':
+  workflow_dispatch: null
+  schedule:
+  - cron: 0 0 * * *
+permissions:
+  contents: write
+concurrency:
+  group: profile-visuals
+  cancel-in-progress: false
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+    - name: base
+      uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
+      with:
+        filename: github-metrics/base.svg
+        token: ${{ secrets.GITHUB_TOKEN }}
+        user: Alinerml
+        template: classic
+        config_timezone: Asia/Shanghai
+        base: header, activity, community, repositories
+        plugin_traffic: false
+        plugin_lines: true
+        plugin_introduction: true
+        plugin_gists: true
+        plugins_errors_fatal: true
+    - name: Indepth analysis
+      uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
+      with:
+        filename: github-metrics/languages.indepth.svg
+        token: ${{ secrets.GITHUB_TOKEN }}
+        base: ''
+        plugin_languages: true
+        plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake,
+          lex, cmake, shell, gnuplot
+        plugin_languages_indepth: true
+        plugin_languages_details: lines, bytes-size
+        plugin_languages_limit: 4
+        plugin_languages_analysis_timeout: 15
+        user: Alinerml
+        plugin_traffic: false
+        plugins_errors_fatal: true
+    - name: Using chartist charts
+      uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
+      with:
+        filename: github-metrics/stargazers.chartist.svg
+        token: ${{ secrets.GITHUB_TOKEN }}
+        base: ''
+        plugin_stargazers: true
+        plugin_stargazers_charts_type: chartist
+        user: Alinerml
+        plugin_traffic: false
+        plugins_errors_fatal: true
+    - name: Recently starred
+      uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
+      with:
+        filename: github-metrics/stars.svg
+        token: ${{ secrets.GITHUB_TOKEN }}
+        base: ''
+        plugin_stars: true
+        plugin_stars_limit: 10
+        user: Alinerml
+        plugin_traffic: false
+        plugins_errors_fatal: true
+    - name: Indepth analysis
+      uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
+      with:
+        filename: github-metrics/followup.indepth.svg
+        token: ${{ secrets.GITHUB_TOKEN }}
+        base: ''
+        plugin_followup: true
+        plugin_followup_indepth: true
+        user: Alinerml
+        plugin_traffic: false
+        plugins_errors_fatal: true
+    - name: Comment reactions
+      uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
+      with:
+        filename: github-metrics/reactions.svg
+        token: ${{ secrets.GITHUB_TOKEN }}
+        base: ''
+        plugin_reactions: true
+        plugin_reactions_limit: 100
+        plugin_reactions_details: percentage
+        user: Alinerml
+        plugin_traffic: false
+        plugins_errors_fatal: true
+    - name: Followers
+      uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
+      with:
+        filename: github-metrics/people.followers.svg
+        token: ${{ secrets.GITHUB_TOKEN }}
+        base: ''
+        plugin_people: true
+        plugin_people_limit: 300
+        plugin_people_size: 36
+        plugin_people_types: followers, following
+        user: Alinerml
+        plugin_traffic: false
+        plugins_errors_fatal: true
+    - name: Pinned repositories
+      uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
+      with:
+        filename: github-metrics/repositories.pinned.svg
+        token: ${{ secrets.GITHUB_TOKEN }}
+        base: ''
+        plugin_repositories: true
+        plugin_repositories_pinned: 2
+        user: Alinerml
+        plugin_traffic: false
+        plugins_errors_fatal: true
