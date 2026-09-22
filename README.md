@@ -101,12 +101,6 @@
 <img src="https://raw.githubusercontent.com/sun0225SUN/sun0225SUN/e2631be9680678ffb5633f83bc4fe2d5021e680b/assets/images/js.webp" width="80" alt="JavaScript 动画图标" />
 <img src="https://raw.githubusercontent.com/sun0225SUN/sun0225SUN/e2631be9680678ffb5633f83bc4fe2d5021e680b/assets/images/github.webp" width="80" alt="GitHub 动画图标" />
 
-### 📅 Contribution Calendar
-
-查看历年贡献：
-
-[2026](https://github.com/Alinerml?tab=overview&from=2026-01-01&to=2026-12-31) · [2025](https://github.com/Alinerml?tab=overview&from=2025-01-01&to=2025-12-31) · [2024](https://github.com/Alinerml?tab=overview&from=2024-01-01&to=2024-12-31) · [2023](https://github.com/Alinerml?tab=overview&from=2023-01-01&to=2023-12-31) · [2022](https://github.com/Alinerml?tab=overview&from=2022-01-01&to=2022-12-31) · [2021](https://github.com/Alinerml?tab=overview&from=2021-01-01&to=2021-12-31) · [2020](https://github.com/Alinerml?tab=overview&from=2020-01-01&to=2020-12-31)
-
 ### 🏙️ My Contribution City
 
 <picture>
