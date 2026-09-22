@@ -75,7 +75,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: 'true'
 
-      - name: Verify generated images
+      - name: Finalize and verify generated images
         run: |
           python3 - <<'PY'
           from pathlib import Path
@@ -89,6 +89,15 @@ jobs:
           ]
           for name in required:
               p = Path(name)
+              if name.startswith(('profile/stats', 'profile/languages')):
+                  # Keep data cards readable before SVG entrance animations run.
+                  # Animated decoration remains in the title and contribution snake.
+                  content = p.read_text()
+                  marker = '/* static-profile-card */'
+                  if marker not in content:
+                      css = marker + '\n* { animation: none !important; transition: none !important; }\n.stagger { opacity: 1 !important; }\n'
+                      assert '</style>' in content, name
+                      p.write_text(content.replace('</style>', css + '</style>', 1))
               assert p.stat().st_size > 200, name
               root = ET.parse(p).getroot()
               assert root.tag.endswith('svg'), name
