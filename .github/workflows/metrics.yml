@@ -12,6 +12,7 @@ permissions:
 concurrency:
   group: profile-visuals
   cancel-in-progress: false
+  queue: max
 jobs:
   card-0:
     runs-on: ubuntu-latest
@@ -201,60 +202,6 @@ jobs:
         optimize: svg
         debug: true
     if: ${{ !inputs.only_base }}
-  card-8:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-    - name: Coding habits
-      uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
-      with:
-        filename: github-metrics/habits.charts.svg
-        token: ${{ secrets.GITHUB_TOKEN }}
-        user: Alinerml
-        repositories_affiliations: ''
-        base: ''
-        config_timezone: Asia/Shanghai
-        plugin_habits: true
-        plugin_habits_from: 100
-        plugin_habits_days: 30
-        plugin_habits_facts: false
-        plugin_habits_charts: true
-        plugin_habits_charts_type: classic
-        plugin_traffic: false
-        plugins_errors_fatal: true
-        config_animations: false
-        config_base64: false
-        retries: 0
-        optimize: svg
-        debug: true
-    if: ${{ !inputs.only_base }}
-  card-9:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-    - name: Recent public activity
-      uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
-      with:
-        filename: github-metrics/activity.svg
-        token: ${{ secrets.GITHUB_TOKEN }}
-        user: Alinerml
-        repositories_affiliations: ''
-        base: ''
-        config_timezone: Asia/Shanghai
-        plugin_activity: true
-        plugin_activity_limit: 5
-        plugin_activity_load: 100
-        plugin_activity_days: 0
-        plugin_activity_visibility: public
-        plugin_activity_filter: push, issue, pr, release, fork, review, ref/create, star
-        plugin_traffic: false
-        plugins_errors_fatal: true
-        config_animations: false
-        config_base64: false
-        retries: 0
-        optimize: svg
-        debug: true
-    if: ${{ !inputs.only_base }}
   card-10:
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -277,3 +224,26 @@ jobs:
         optimize: svg
         debug: true
     if: ${{ !inputs.only_base }}
+  public-activity:
+    if: ${{ !inputs.only_base }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: main
+      - name: Verify public activity renderer
+        run: python3 -m unittest discover -s scripts -p 'test_public_activity.py'
+      - name: Generate public event cards
+        run: python3 scripts/public_activity.py
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish public activity cards
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add github-metrics/activity.svg github-metrics/habits.charts.svg
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Refresh public activity cards'
+          git pull --rebase origin main
+          git push origin HEAD:main
