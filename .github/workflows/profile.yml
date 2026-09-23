@@ -15,6 +15,7 @@ permissions:
 concurrency:
   group: profile-visuals
   cancel-in-progress: false
+  queue: max
 
 jobs:
   generate:
