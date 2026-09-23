@@ -4,7 +4,7 @@
 <text x="20" y="30" class="title" >Public push events · last 30 days</text>
 <text x="20" y="53" class="sub" >API sample: 17 public events · up to 300 / 30 days</text>
 <text x="20" y="71" class="sub" >Public actor: Alinerml · timestamps: Beijing (UTC+8)</text>
-<text x="20" y="89" class="sub" >Fetched 2026-09-23 16:15 · API may lag; incomplete history</text>
+<text x="20" y="89" class="sub" >Fetched 2026-09-23 16:16 · API may lag; incomplete history</text>
 <text x="20" y="120" class="label" >14 push events in sample · not commits or coding time</text>
 <text x="20" y="149" class="sub" >Hour of day · Beijing time</text>
 <rect class="track" x="20.0" y="166" width="12" height="78" rx="2"/>
