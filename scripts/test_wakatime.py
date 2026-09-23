@@ -100,7 +100,7 @@ class WakaTimeTests(unittest.TestCase):
             after = {p.name: p.read_bytes() for p in root.rglob('*') if p.is_file()}
             self.assertEqual(before, after)
 
-    def test_zero_activity_removes_module_and_old_cards(self):
+    def test_zero_activity_shows_verified_empty_state_and_removes_old_cards(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             readme = root / 'README.md'
@@ -110,7 +110,9 @@ class WakaTimeTests(unittest.TestCase):
             for field, _ in wakatime.FIELDS:
                 empty[field] = []
             wakatime.update(root, empty)
-            self.assertEqual(readme.read_text(), wakatime.START + '\n\n' + wakatime.END)
+            self.assertIn('### 📊 WakaTime', readme.read_text())
+            self.assertIn('暂未采集到编程活动', readme.read_text())
+            self.assertNotIn('<img', readme.read_text())
             self.assertEqual(list((root / 'profile').glob('*.svg')), [])
 
     def test_bad_data_or_markers_preserve_all_existing_files(self):

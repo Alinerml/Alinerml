@@ -124,7 +124,7 @@ def markdown(data, groups):
             raise ValueError('WakaTime dates are invalid; existing output kept.') from None
     period = f'{dates[0]} – {dates[1]} (UTC)'
     if not any(groups.values()):
-        return '', {}
+        return f'### 📊 WakaTime\n\n最近 7 天 · {period}。暂未采集到编程活动。', {}
     lines = ['### 📊 WakaTime', '', f'最近 7 天 · {period}。仅展示语言、编辑器与操作系统汇总。', '']
     for field, title in FIELDS:
         rows = groups[field]

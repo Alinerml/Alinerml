@@ -9,7 +9,7 @@
 3. 打开本仓库 [Actions secrets 设置](https://github.com/Alinerml/Alinerml/settings/secrets/actions)，新增 Repository secret `WAKATIME_API_KEY`，粘贴密钥。不要写入 README、代码、Issue 或聊天。
 4. 在 [Personal profile feeds](https://github.com/Alinerml/Alinerml/actions/workflows/personal-feeds.yml) 点击 **Run workflow**。有真实活动数据后，隐藏的 WakaTime 插槽会自动显示语言、编辑器、操作系统和两张卡片。
 
-没有密钥时工作流安全跳过，首次接入前不展示占位模块。最近 7 天没有活动时隐藏整个模块；API 失败或统计尚在刷新时保留上一次成功输出，并让该次运行失败，避免把接口故障当作零数据。定时任务的开始时间可能受 GitHub 排队影响。
+没有密钥时工作流安全跳过，首次接入前不展示占位模块。密钥验证成功但最近 7 天没有活动时显示真实空状态，不生成空白图表；API 失败或统计尚在刷新时保留上一次成功输出，并让该次运行失败，避免把接口故障当作零数据。定时任务的开始时间可能受 GitHub 排队影响。
 
 脚本只保存三种维度的汇总名称和用时，不保存 API 原始响应，不输出项目、文件路径、分支、机器名称、账号标识或私有仓库信息。密钥只通过 HTTPS Authorization 请求头使用，不进入 URL 或日志。汇总用时可能包含在私人项目中的活动，但不会公开项目身份。
 
@@ -22,7 +22,7 @@ python3 -m unittest discover -s scripts -p 'test_wakatime.py'
 python3 scripts/wakatime.py
 ```
 
-第一条用合成测试数据验证隐私字段过滤、空数据、SVG 转义、插槽替换和 API 错误处理；不会请求真实账号。第二条未配置密钥时不会修改文件。实际账号连通和活动采集需要配置密钥后另行验证。
+第一条用合成测试数据验证隐私字段过滤、空数据状态、SVG 转义、插槽替换和 API 错误处理；不会请求真实账号。第二条未配置密钥时不会修改文件。实际账号连通和活动采集需要配置密钥后另行验证。
 
 ## 依据
 
