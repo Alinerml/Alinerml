@@ -75,7 +75,7 @@
   <img src="profile/stats.svg" alt="Alinerml 的 GitHub 公开统计" />
 </picture>
 
-<img src="github-metrics/base.svg" alt="GitHub 账号概览（含公开协作仓库，不含 fork）" />
+<img src="github-metrics/base.svg" alt="GitHub 账号概览（仅本人拥有的公开仓库）" />
 
 <img src="profile/activity.svg" alt="最近 30 天公开贡献趋势" width="840" />
 
@@ -183,7 +183,7 @@
 
 <table>
   <tr>
-    <td><img src="github-metrics/languages.indepth.svg" alt="languages.indepth" /></td>
+    <td><img src="github-metrics/habits.charts.svg" alt="公开推送的活跃时段（北京时间）" /></td>
     <td><img src="github-metrics/reactions.svg" alt="reactions" /></td>
   </tr>
   <tr>
@@ -204,7 +204,6 @@
 <details>
 <summary>更多 GitHub 活动与统计</summary>
 <br />
-<img src="github-metrics/habits.charts.svg" alt="公开推送的活跃时段（北京时间）" />
 <img src="github-metrics/activity.svg" alt="最近公开活动" />
 <img src="github-metrics/discussions.svg" alt="GitHub Discussions 参与统计" />
 </details>
