@@ -101,7 +101,7 @@ jobs:
         plugin_traffic: false
         plugins_errors_fatal: true
         config_animations: false
-        config_base64: false
+        config_base64: true
         retries: 0
         optimize: svg
         debug: true
