@@ -180,7 +180,7 @@
 
 <table>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/Alinerml/Alinerml/main/github-metrics/people.followers.svg?v=embedded-avatars-1" alt="people.followers" /></td>
+    <td><img src="github-metrics/people.svg" alt="people.followers" /></td>
   </tr>
 </table>
 

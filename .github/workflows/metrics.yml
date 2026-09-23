@@ -89,7 +89,7 @@ jobs:
     - name: Followers
       uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
       with:
-        filename: github-metrics/people.followers.svg
+        filename: github-metrics/people.svg
         token: ${{ secrets.GITHUB_TOKEN }}
         base: ''
         plugin_people: true
