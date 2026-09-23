@@ -3,35 +3,25 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=console.log(%22Hello%2C%20World%22);Alinerml祝您今天愉快!&center=true&size=27)](https://git.io/typing-svg)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/coding.gif" />
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/developer.svg" height="225px" />
-  <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/coding.gif" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/coding.gif" />
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/developer.svg" height="225px" />
+  <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/coding.gif" />
 </picture>
 
 <div>&nbsp;</div>
 
 <div>
   <a href="https://github.com/Alinerml"><img src="https://img.shields.io/badge/GitHub-Alinerml-blue" /></a>&emsp;
-  <img src="https://img.shields.io/badge/Social-尚未关联-07c160" alt="社交账号尚未关联" />&emsp;
-  <img src="https://komarev.com/ghpvc/?username=Alinerml&label=Views&color=orange&style=flat" alt="访问量统计" />&emsp;
-  <img src="https://img.shields.io/badge/WakaTime-尚未关联-blue" alt="WakaTime 尚未关联" />
+  <img src="https://komarev.com/ghpvc/?username=Alinerml&label=Views&color=orange&style=flat" alt="访问量统计" />
 </div>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile/snake-dark.svg?v=20260922-2" />
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile/snake.svg?v=20260922-2" />
-  <img alt="github-snake" src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile/snake-dark.svg?v=20260922-2" />
+  <source media="(prefers-color-scheme: dark)" srcset="profile/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="profile/snake.svg" />
+  <img alt="github-snake" src="profile/snake-dark.svg" />
 </picture>
 
-<p><img src="https://img.shields.io/badge/Sponsors-尚未关联-f4ca64" alt="赞助信息尚未关联" /></p>
-
-<div align="center">
-<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee · 赞助链接尚未关联" height="60" width="217" />
-
-
 </div>
-</div>
-
 
 #  🙋 Hello
 
@@ -41,7 +31,7 @@
 
 ### 🤺 About Me
 
-<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/jobs.png" />
+<img align="right" width="88" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/jobs.png" />
 
 <p>&emsp;&emsp;嗨，你好，我是 Alinerml。在这里记录代码、探索新工具。</p>
 <p>&emsp;&emsp;热爱计算机科学和 IT 互联网事业，希望能成为一名优秀的开发者。</p>
@@ -51,83 +41,68 @@
 </td></tr>
 
 
-
-
-
-<tr><td>
-
-### 📊 WakaTime
-
-<!--START_SECTION:waka-->
-WakaTime 已注册，编程活动采集尚未接通。
-<!--END_SECTION:waka-->
-
-</td></tr>
-
 </table>
 
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 
-<img width="200%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/hr.gif" />
+
+<img width="100%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/hr.gif" />
 
 <div align="center">
 
-<img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/man_run.png" width="250" height="250" />
+<img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/man_run.png" width="250" height="250" />
 
 <div>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://readme-jokes.vercel.app/api?hideBorder&bgColor=%23121212" />
-    <source media="(prefers-color-scheme: light)" srcset="https://readme-jokes.vercel.app/api?hideBorder&bgColor=%ffffff" />
+    <source media="(prefers-color-scheme: light)" srcset="https://readme-jokes.vercel.app/api?hideBorder&bgColor=%23ffffff" />
     <img alt="Jokes Card" src="https://readme-jokes.vercel.app/api?hideBorder&bgColor=%23121212" />
   </picture>
 </div>
 
-<img align="left" width="150" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/left.png" />
+<img align="left" width="150" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/left.png" />
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=Alinerml&theme=dark&hide_border=true" />
   <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=Alinerml&theme=light&hide_border=true" />
   <img src="https://streak-stats.demolab.com/?user=Alinerml&theme=dark&hide_border=true" />
 </picture>
-<img align="right" width="150"  src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/right.png" />
+<img align="right" width="150"  src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/right.png" />
 
-<img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/base.svg?v=20260922-2" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profile/stats-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="profile/stats.svg" />
+  <img src="profile/stats.svg" alt="Alinerml 的 GitHub 公开统计" />
+</picture>
 
-<table>
-  <tr>
-    <td>
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Alinerml&theme=xcode&bg_color=FF000000&hide_border=true" />
-        <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Alinerml&theme=xcode&bg_color=FF000000&color=000000&hide_border=true" />
-        <img src="https://github-readme-activity-graph.vercel.app/graph?username=Alinerml&theme=xcode&bg_color=FF000000&hide_border=true" />
-      </picture>
-  </tr>
-</table>
+<img src="github-metrics/base.svg" alt="GitHub 账号概览（含公开协作仓库，不含 fork）" />
+
+<img src="profile/activity.svg" alt="最近 30 天公开贡献趋势" width="840" />
 
 </div>
 
-<img width="200%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/hr.gif" />
+<img width="100%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/hr.gif" />
 
 <div align="center" >
 
-<img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/mb.png" width="250" height="250" />
+<img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/mb.png" width="250" height="250" />
 
 <div><img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" /><br/></div>
 
 
-
-<table>
-  <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/wakatime.svg?v=20260922-2" width="500" alt="WakaTime 尚未关联" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/wakatime.svg?v=20260922-2" width="500" alt="WakaTime 尚未关联" /></td>
-  </tr>
-</table>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profile/languages-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="profile/languages.svg" />
+  <img src="profile/languages.svg" alt="公开仓库的语言分布" />
+</picture>
 
 </div>
 
-<img width="200%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/hr.gif" />
+<img width="100%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/hr.gif" />
 
 <div align="center" >
 
-<img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/man.png" width="250" height="250" />
+<img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/man.png" width="250" height="250" />
 
 ![HTML5 Badge](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=flat)
 ![CSS3 Badge](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=flat)
@@ -177,64 +152,64 @@ WakaTime 已注册，编程活动采集尚未接通。
 <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="icon" width="65" style="width: 65px; height: 65px; margin-right: 50px; margin-bottom: 0px;" /><br>
 
 
-<img height="100" width="100" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/html.webp">
-<img height="100" width="100" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/cssgif.webp">
-<img height="100" width="100" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/vscode.webp">
-<img height="100" width="100" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/react.webp">
-<img height="95" width="95" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/vue.webp">
-<img height="100" width="100" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/python.webp">
-<img height="100" width="100" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/js.webp">
-<img height="100" width="100" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/github.webp">
+<img height="100" width="100" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/html.webp">
+<img height="100" width="100" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/cssgif.webp">
+<img height="100" width="100" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/vscode.webp">
+<img height="100" width="100" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/react.webp">
+<img height="95" width="95" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/vue.webp">
+<img height="100" width="100" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/python.webp">
+<img height="100" width="100" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/js.webp">
+<img height="100" width="100" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/github.webp">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile-3d-contrib/profile-night-rainbow.svg?v=20260922-2" />
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile-3d-contrib/profile-gitblock.svg?v=20260922-2" />
-  <img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/profile-3d-contrib/profile-night-rainbow.svg?v=20260922-2" />
+  <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-night-rainbow.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="profile-3d-contrib/profile-gitblock.svg" />
+  <img src="profile-3d-contrib/profile-night-rainbow.svg" />
 </picture>
 
 </div>
 
-<img width="200%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/hr.gif" />
+<img width="100%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/hr.gif" />
 
 <div align="center">
 
-<img width="36%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/githubgif.gif" />
+<img width="36%" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/githubgif.gif" />
 
 <table>
   <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/people.followers.svg?v=20260922-2" alt="people.followers" /></td>
+    <td><img src="github-metrics/people.followers.svg" alt="people.followers" /></td>
   </tr>
 </table>
 
 <table>
   <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/languages.indepth.svg?v=20260922-2" alt="languages.indepth" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/reactions.svg?v=20260922-2" alt="reactions" /></td>
+    <td><img src="github-metrics/languages.indepth.svg" alt="languages.indepth" /></td>
+    <td><img src="github-metrics/reactions.svg" alt="reactions" /></td>
   </tr>
   <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/followup.indepth.svg?v=20260922-2" alt="followup.indepth" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/repositories.pinned.svg?v=20260922-2" alt="repositories.pinned" /></td>
+    <td><img src="github-metrics/followup.indepth.svg" alt="followup.indepth" /></td>
+    <td><img src="github-metrics/repositories.pinned.svg" alt="精选公开项目：minigo 与 tiktok" /></td>
   </tr>
   <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/wakatime.svg?v=20260922-2" alt="wakatime" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/stackoverflow.svg?v=20260922-2" alt="stackoverflow" /></td>
+    <td><img src="github-metrics/stars.svg" alt="stars" /></td>
+    <td><img src="github-metrics/stargazers.chartist.svg" alt="stargazers.chartist" /></td>
   </tr>
   <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/stars.svg?v=20260922-2" alt="stars" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/stargazers.chartist.svg?v=20260922-2" alt="stargazers.chartist" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/isocalendar.fullyear.svg?v=20260922-2" alt="isocalendar.fullyear" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/Alinerml/Alinerml@main/github-metrics/calendar.full.svg?v=20260922-2" alt="calendar.full" /></td>
+    <td><img src="github-metrics/isocalendar.fullyear.svg" alt="isocalendar.fullyear" /></td>
+    <td><img src="github-metrics/calendar.full.svg" alt="calendar.full" /></td>
   </tr>
 </table>
 
-<p><img src="https://img.shields.io/badge/RepoBeats-尚未关联-218bff" alt="RepoBeats 尚未关联" /></p>
 
-<img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/icon.png" />
+<details>
+<summary>更多 GitHub 活动与统计</summary>
+<br />
+<img src="github-metrics/habits.charts.svg" alt="公开推送的活跃时段（北京时间）" />
+<img src="github-metrics/activity.svg" alt="最近公开活动" />
+<img src="github-metrics/discussions.svg" alt="GitHub Discussions 参与统计" />
+</details>
+
+<img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN@6d4e976b053a33c97b5b0984516217c22af93de5/assets/images/icon.png" />
 </div>
-
-</div>
-
 
 <sub>Layout and decorative assets adapted from [sun0225SUN](https://github.com/sun0225SUN/sun0225SUN). Statistics belong to Alinerml.</sub>
