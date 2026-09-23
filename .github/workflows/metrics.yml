@@ -23,6 +23,8 @@ jobs:
         filename: github-metrics/base.svg
         token: ${{ secrets.GITHUB_TOKEN }}
         user: Alinerml
+        # Avoid filtering all public repositories by the GITHUB_TOKEN installation.
+        repositories_affiliations: ''
         template: classic
         config_timezone: Asia/Shanghai
         base: header, activity, community, repositories
@@ -55,6 +57,7 @@ jobs:
         plugin_languages_limit: 4
         plugin_languages_analysis_timeout: 15
         user: Alinerml
+        repositories_affiliations: ''
         plugin_traffic: false
         plugins_errors_fatal: true
         config_animations: false
@@ -76,6 +79,7 @@ jobs:
         plugin_stargazers: true
         plugin_stargazers_charts_type: chartist
         user: Alinerml
+        repositories_affiliations: ''
         plugin_traffic: false
         plugins_errors_fatal: true
         config_animations: false
@@ -97,6 +101,7 @@ jobs:
         plugin_stars: true
         plugin_stars_limit: 10
         user: Alinerml
+        repositories_affiliations: ''
         plugin_traffic: false
         plugins_errors_fatal: true
         config_animations: false
@@ -118,6 +123,7 @@ jobs:
         plugin_followup: true
         plugin_followup_indepth: true
         user: Alinerml
+        repositories_affiliations: ''
         plugin_traffic: false
         plugins_errors_fatal: true
         config_animations: false
@@ -140,6 +146,7 @@ jobs:
         plugin_reactions_limit: 100
         plugin_reactions_details: percentage
         user: Alinerml
+        repositories_affiliations: ''
         plugin_traffic: false
         plugins_errors_fatal: true
         config_animations: false
@@ -163,6 +170,7 @@ jobs:
         plugin_people_size: 36
         plugin_people_types: followers, following
         user: Alinerml
+        repositories_affiliations: ''
         plugin_traffic: false
         plugins_errors_fatal: true
         config_animations: false
@@ -184,6 +192,7 @@ jobs:
         plugin_repositories: true
         plugin_repositories_featured: Alinerml/minigo, Alinerml/tiktok
         user: Alinerml
+        repositories_affiliations: ''
         plugin_traffic: false
         plugins_errors_fatal: true
         config_animations: false
@@ -202,6 +211,7 @@ jobs:
         filename: github-metrics/habits.charts.svg
         token: ${{ secrets.GITHUB_TOKEN }}
         user: Alinerml
+        repositories_affiliations: ''
         base: ''
         config_timezone: Asia/Shanghai
         plugin_habits: true
@@ -228,6 +238,7 @@ jobs:
         filename: github-metrics/activity.svg
         token: ${{ secrets.GITHUB_TOKEN }}
         user: Alinerml
+        repositories_affiliations: ''
         base: ''
         config_timezone: Asia/Shanghai
         plugin_activity: true
@@ -254,6 +265,7 @@ jobs:
         filename: github-metrics/discussions.svg
         token: ${{ secrets.GITHUB_TOKEN }}
         user: Alinerml
+        repositories_affiliations: ''
         base: ''
         plugin_discussions: true
         plugin_discussions_categories_limit: 8
