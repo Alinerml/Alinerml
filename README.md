@@ -76,7 +76,7 @@
   <img src="profile/stats.svg" alt="Alinerml 的 GitHub 公开统计" />
 </picture>
 
-<img src="github-metrics/base.svg" alt="GitHub 账号概览（仅本人拥有的公开仓库）" />
+<img src="https://raw.githubusercontent.com/Alinerml/Alinerml/main/github-metrics/base.svg?v=public-rest-1" alt="GitHub 账号概览（仅本人拥有的公开仓库）" />
 
 <img src="profile/activity.svg" alt="最近 30 天公开贡献趋势" width="840" />
 
@@ -193,7 +193,7 @@
   </tr>
   <tr>
     <td><img src="github-metrics/stars.svg" alt="stars" /></td>
-    <td><img src="github-metrics/stargazers.chartist.svg" alt="stargazers.chartist" /></td>
+    <td><img src="https://raw.githubusercontent.com/Alinerml/Alinerml/main/github-metrics/stargazers.chartist.svg?v=public-rest-1" alt="stargazers.chartist" /></td>
   </tr>
   <tr>
     <td><img src="github-metrics/isocalendar.fullyear.svg" alt="isocalendar.fullyear" /></td>
