@@ -46,7 +46,30 @@
 <!--START_SECTION:waka-->
 ### 📊 WakaTime
 
-最近 7 天 · 2026-10-01 – 2026-10-08 (UTC)。暂未采集到编程活动。
+最近 7 天 · 2026-10-02 – 2026-10-09 (UTC)。仅展示语言、编辑器与操作系统汇总。
+
+**语言**
+
+| 名称 | 时长 | 占比 |
+| --- | ---: | ---: |
+| JavaScript | &lt; 1 min | 100.0% |
+
+**编辑器**
+
+| 名称 | 时长 | 占比 |
+| --- | ---: | ---: |
+| VS Code | &lt; 1 min | 100.0% |
+
+**操作系统**
+
+| 名称 | 时长 | 占比 |
+| --- | ---: | ---: |
+| Windows | &lt; 1 min | 100.0% |
+
+<p align="center">
+  <img src="profile/wakatime-languages.svg" width="48%" alt="WakaTime 最近 7 天语言统计" />
+  <img src="profile/wakatime-editors.svg" width="48%" alt="WakaTime 最近 7 天编辑器统计" />
+</p>
 <!--END_SECTION:waka-->
 
 
