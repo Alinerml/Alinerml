@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="150" viewBox="0 0 480 150" role="img" aria-labelledby="title desc">
 <title id="title">WakaTime · Editors</title>
-<desc id="desc">WakaTime, last 7 days: 2026-10-02 – 2026-10-09 (UTC)</desc>
+<desc id="desc">WakaTime, last 7 days: 2026-10-03 – 2026-10-10 (UTC)</desc>
 <style>text{font-family:Segoe UI,Arial,sans-serif;fill:#24292f;font-size:12px}.title{font-size:18px;fill:#218bff}.sub{fill:#57606a}.track{fill:#eaeef2}@media(prefers-color-scheme:dark){text{fill:#c9d1d9}.sub{fill:#8b949e}.track{fill:#30363d}}</style>
 <text class="title" x="20" y="30">WakaTime · Editors</text>
-<text class="sub" x="20" y="53">2026-10-02 – 2026-10-09 (UTC) · Last 7 days</text>
+<text class="sub" x="20" y="53">2026-10-03 – 2026-10-10 (UTC) · Last 7 days</text>
 <text x="20" y="84"><title>VS Code</title>VS Code</text>
 <text x="460" y="84" text-anchor="end">&lt; 1 min · 100.0%</text>
 <rect class="track" x="20" y="94" width="440" height="7" rx="3"/>
