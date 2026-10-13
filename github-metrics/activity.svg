@@ -2,9 +2,9 @@
 <title id="title">Recent public activity</title><desc id="desc">Latest five public GitHub events by Alinerml, from a limited API sample.</desc>
 <style>text{font-family:Segoe UI,Arial,sans-serif;font-size:12px;fill:#24292f}.title{font-size:18px;fill:#218bff}.sub{font-size:11px;fill:#57606a}.label{font-weight:600}.track{fill:#eaeef2}.bar{fill:#218bff}.line{stroke:#d0d7de}@media(prefers-color-scheme:dark){text{fill:#c9d1d9}.sub{fill:#8b949e}.track{fill:#30363d}.line{stroke:#30363d}}</style>
 <text x="20" y="30" class="title" >Recent public activity</text>
-<text x="20" y="53" class="sub" >API sample: 33 public events · up to 300 / 30 days</text>
+<text x="20" y="53" class="sub" >API sample: 27 public events · up to 300 / 30 days</text>
 <text x="20" y="71" class="sub" >Public actor: Alinerml · timestamps: Beijing (UTC+8)</text>
-<text x="20" y="89" class="sub" >Fetched 2026-10-12 11:18 · API may lag; incomplete history</text>
+<text x="20" y="89" class="sub" >Fetched 2026-10-13 12:33 · API may lag; incomplete history</text>
 <text x="20" y="126" class="label" >PushEvent</text>
 <text x="460" y="126" class="sub" text-anchor="end">10-08 14:29</text>
 <g><title>Alinerml/Alinerml.github.io</title><text x="20" y="147" class="sub" >Alinerml/Alinerml.github.io</text></g>
