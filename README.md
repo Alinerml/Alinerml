@@ -46,29 +46,33 @@
 <!--START_SECTION:waka-->
 ### 📊 WakaTime
 
-最近 7 天 · 2026-10-15 – 2026-10-22 (UTC)。仅展示语言、编辑器与操作系统汇总。
+最近 7 天 · 2026-10-16 – 2026-10-23 (UTC)。仅展示语言、编辑器与操作系统汇总。
 
 **语言**
 
 | 名称 | 时长 | 占比 |
 | --- | ---: | ---: |
-| Other | 3 h 26 min | 89.8% |
-| YAML | 22 min | 9.9% |
-| Markdown | &lt; 1 min | 0.3% |
+| Other | 15 h 40 min | 74.3% |
+| Python | 2 h 2 min | 9.7% |
+| JavaScript | 1 h 32 min | 7.3% |
+| Text | 1 h 24 min | 6.7% |
+| YAML | 22 min | 1.8% |
+| PowerShell | 2 min | 0.2% |
+| Markdown | &lt; 1 min | 0.1% |
+| JSON | &lt; 1 min | 0.0% |
 
 **编辑器**
 
 | 名称 | 时长 | 占比 |
 | --- | ---: | ---: |
-| Codex Vscode | 3 h 48 min | 99.4% |
-| VS Code | &lt; 1 min | 0.3% |
-| Codex CLI | &lt; 1 min | 0.3% |
+| Codex Vscode | 20 h 42 min | 98.2% |
+| Codex CLI | 22 min | 1.8% |
 
 **操作系统**
 
 | 名称 | 时长 | 占比 |
 | --- | ---: | ---: |
-| Windows | 3 h 50 min | 100.0% |
+| Windows | 21 h 5 min | 100.0% |
 
 <p align="center">
   <img src="profile/wakatime-languages.svg" width="48%" alt="WakaTime 最近 7 天语言统计" />
