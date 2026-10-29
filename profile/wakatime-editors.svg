@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="195" viewBox="0 0 480 195" role="img" aria-labelledby="title desc">
 <title id="title">WakaTime · Editors</title>
-<desc id="desc">WakaTime, last 7 days: 2026-10-20 – 2026-10-27 (UTC)</desc>
+<desc id="desc">WakaTime, last 7 days: 2026-10-21 – 2026-10-28 (UTC)</desc>
 <style>text{font-family:Segoe UI,Arial,sans-serif;fill:#24292f;font-size:12px}.title{font-size:18px;fill:#218bff}.sub{fill:#57606a}.track{fill:#eaeef2}@media(prefers-color-scheme:dark){text{fill:#c9d1d9}.sub{fill:#8b949e}.track{fill:#30363d}}</style>
 <text class="title" x="20" y="30">WakaTime · Editors</text>
-<text class="sub" x="20" y="53">2026-10-20 – 2026-10-27 (UTC) · Last 7 days</text>
+<text class="sub" x="20" y="53">2026-10-21 – 2026-10-28 (UTC) · Last 7 days</text>
 <text x="20" y="84"><title>Codex Vscode</title>Codex Vscode</text>
-<text x="460" y="84" text-anchor="end">18 h 48 min · 98.0%</text>
+<text x="460" y="84" text-anchor="end">16 h 26 min · 97.8%</text>
 <rect class="track" x="20" y="94" width="440" height="7" rx="3"/>
-<rect x="20" y="94" width="431.39" height="7" rx="3" fill="#218bff"/>
+<rect x="20" y="94" width="430.18" height="7" rx="3" fill="#218bff"/>
 <text x="20" y="129"><title>Codex CLI</title>Codex CLI</text>
-<text x="460" y="129" text-anchor="end">22 min · 2.0%</text>
+<text x="460" y="129" text-anchor="end">22 min · 2.2%</text>
 <rect class="track" x="20" y="139" width="440" height="7" rx="3"/>
-<rect x="20" y="139" width="8.61" height="7" rx="3" fill="#218bff"/>
+<rect x="20" y="139" width="9.82" height="7" rx="3" fill="#218bff"/>
 </svg>
