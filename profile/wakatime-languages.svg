@@ -1,31 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="375" viewBox="0 0 480 375" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="420" viewBox="0 0 480 420" role="img" aria-labelledby="title desc">
 <title id="title">WakaTime · Languages</title>
-<desc id="desc">WakaTime, last 7 days: 2026-10-21 – 2026-10-28 (UTC)</desc>
+<desc id="desc">WakaTime, last 7 days: 2026-10-22 – 2026-10-29 (UTC)</desc>
 <style>text{font-family:Segoe UI,Arial,sans-serif;fill:#24292f;font-size:12px}.title{font-size:18px;fill:#218bff}.sub{fill:#57606a}.track{fill:#eaeef2}@media(prefers-color-scheme:dark){text{fill:#c9d1d9}.sub{fill:#8b949e}.track{fill:#30363d}}</style>
 <text class="title" x="20" y="30">WakaTime · Languages</text>
-<text class="sub" x="20" y="53">2026-10-21 – 2026-10-28 (UTC) · Last 7 days</text>
+<text class="sub" x="20" y="53">2026-10-22 – 2026-10-29 (UTC) · Last 7 days</text>
 <text x="20" y="84"><title>Other</title>Other</text>
-<text x="460" y="84" text-anchor="end">12 h 48 min · 76.1%</text>
+<text x="460" y="84" text-anchor="end">11 h 48 min · 57.7%</text>
 <rect class="track" x="20" y="94" width="440" height="7" rx="3"/>
-<rect x="20" y="94" width="335.03" height="7" rx="3" fill="#218bff"/>
+<rect x="20" y="94" width="253.76" height="7" rx="3" fill="#218bff"/>
 <text x="20" y="129"><title>Python</title>Python</text>
-<text x="460" y="129" text-anchor="end">2 h 2 min · 12.2%</text>
+<text x="460" y="129" text-anchor="end">2 h 2 min · 10.0%</text>
 <rect class="track" x="20" y="139" width="440" height="7" rx="3"/>
-<rect x="20" y="139" width="53.53" height="7" rx="3" fill="#218bff"/>
-<text x="20" y="174"><title>Text</title>Text</text>
-<text x="460" y="174" text-anchor="end">1 h 24 min · 8.3%</text>
+<rect x="20" y="139" width="43.94" height="7" rx="3" fill="#218bff"/>
+<text x="20" y="174"><title>Java Properties</title>Java Properties</text>
+<text x="460" y="174" text-anchor="end">1 h 32 min · 7.6%</text>
 <rect class="track" x="20" y="184" width="440" height="7" rx="3"/>
-<rect x="20" y="184" width="36.71" height="7" rx="3" fill="#218bff"/>
-<text x="20" y="219"><title>JavaScript</title>JavaScript</text>
-<text x="460" y="219" text-anchor="end">31 min · 3.1%</text>
+<rect x="20" y="184" width="33.29" height="7" rx="3" fill="#218bff"/>
+<text x="20" y="219"><title>Text</title>Text</text>
+<text x="460" y="219" text-anchor="end">1 h 24 min · 6.8%</text>
 <rect class="track" x="20" y="229" width="440" height="7" rx="3"/>
-<rect x="20" y="229" width="13.64" height="7" rx="3" fill="#218bff"/>
-<text x="20" y="264"><title>PowerShell</title>PowerShell</text>
-<text x="460" y="264" text-anchor="end">2 min · 0.2%</text>
+<rect x="20" y="229" width="30.14" height="7" rx="3" fill="#218bff"/>
+<text x="20" y="264"><title>Markdown</title>Markdown</text>
+<text x="460" y="264" text-anchor="end">1 h 9 min · 5.7%</text>
 <rect class="track" x="20" y="274" width="440" height="7" rx="3"/>
-<rect x="20" y="274" width="0.89" height="7" rx="3" fill="#218bff"/>
-<text x="20" y="309"><title>JSON</title>JSON</text>
-<text x="460" y="309" text-anchor="end">&lt; 1 min · 0.0%</text>
+<rect x="20" y="274" width="25.03" height="7" rx="3" fill="#218bff"/>
+<text x="20" y="309"><title>JavaScript</title>JavaScript</text>
+<text x="460" y="309" text-anchor="end">56 min · 4.6%</text>
 <rect class="track" x="20" y="319" width="440" height="7" rx="3"/>
-<rect x="20" y="319" width="0.20" height="7" rx="3" fill="#218bff"/>
+<rect x="20" y="319" width="20.37" height="7" rx="3" fill="#218bff"/>
+<text x="20" y="354"><title>Others</title>Others</text>
+<text x="460" y="354" text-anchor="end">1 h 33 min · 7.6%</text>
+<rect class="track" x="20" y="364" width="440" height="7" rx="3"/>
+<rect x="20" y="364" width="33.47" height="7" rx="3" fill="#218bff"/>
 </svg>
