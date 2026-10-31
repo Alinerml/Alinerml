@@ -46,47 +46,44 @@
 <!--START_SECTION:waka-->
 ### 📊 WakaTime
 
-最近 7 天 · 2026-10-22 – 2026-10-29 (UTC)。仅展示语言、编辑器与操作系统汇总。
+最近 7 天 · 2026-10-23 – 2026-10-30 (UTC)。仅展示语言、编辑器与操作系统汇总。
 
 **语言**
 
 | 名称 | 时长 | 占比 |
 | --- | ---: | ---: |
-| Other | 11 h 48 min | 57.7% |
-| Python | 2 h 2 min | 10.0% |
-| Java Properties | 1 h 32 min | 7.6% |
-| Text | 1 h 24 min | 6.8% |
-| Markdown | 1 h 9 min | 5.7% |
-| JavaScript | 56 min | 4.6% |
-| TypeScript | 24 min | 2.0% |
-| CSS | 22 min | 1.9% |
-| XML | 15 min | 1.3% |
-| JSON | 8 min | 0.7% |
-| INI | 5 min | 0.4% |
-| Git Config | 4 min | 0.4% |
-| PowerShell | 3 min | 0.3% |
-| Groovy | 3 min | 0.3% |
-| HTML | 2 min | 0.2% |
-| Image (png) | 2 min | 0.2% |
-| YAML | 1 min | 0.1% |
+| Java Properties | 1 h 32 min | 25.5% |
+| Markdown | 1 h 30 min | 24.8% |
+| JavaScript | 36 min | 9.9% |
+| TypeScript | 33 min | 9.1% |
+| CSS | 23 min | 6.4% |
+| Image (png) | 19 min | 5.2% |
+| Other | 18 min | 5.0% |
+| XML | 15 min | 4.3% |
+| HTML | 11 min | 3.1% |
+| JSON | 9 min | 2.6% |
+| INI | 5 min | 1.4% |
+| Git Config | 4 min | 1.2% |
+| Groovy | 3 min | 0.9% |
+| PowerShell | 1 min | 0.3% |
+| YAML | 1 min | 0.3% |
 | Image (svg) | &lt; 1 min | 0.0% |
 | OASv2-json | &lt; 1 min | 0.0% |
+| Text | &lt; 1 min | 0.0% |
 
 **编辑器**
 
 | 名称 | 时长 | 占比 |
 | --- | ---: | ---: |
-| Codex Vscode | 15 h 8 min | 74.0% |
-| Opencode Desktop | 3 h 23 min | 16.6% |
-| OpenCode | 1 h 31 min | 7.5% |
-| Codex CLI | 22 min | 1.8% |
-| Opencode Cli | 2 min | 0.2% |
+| Opencode Desktop | 4 h 7 min | 68.0% |
+| OpenCode | 1 h 54 min | 31.4% |
+| Opencode Cli | 2 min | 0.6% |
 
 **操作系统**
 
 | 名称 | 时长 | 占比 |
 | --- | ---: | ---: |
-| Windows | 20 h 28 min | 100.0% |
+| Windows | 6 h 4 min | 100.0% |
 
 <p align="center">
   <img src="profile/wakatime-languages.svg" width="48%" alt="WakaTime 最近 7 天语言统计" />
