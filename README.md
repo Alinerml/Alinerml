@@ -50,7 +50,25 @@
 <!--START_SECTION:waka-->
 ### 📊 WakaTime
 
-最近 7 天 · 2026-11-09 – 2026-11-16 (UTC)。暂未采集到编程活动。
+💻 **Coding Time: 暂无记录** · 最近 7 天 · 2026-11-09 – 2026-11-16 (UTC)。暂未采集到编程活动。
+
+仅展示 WakaTime 实际提供的语言、编辑器与操作系统汇总。
+
+```text
+🔥 语言:
+No recorded activity
+```
+
+```text
+🔥 编辑器:
+No recorded activity
+```
+
+```text
+🔥 操作系统:
+No recorded activity
+```
+
 <!--END_SECTION:waka-->
 
 
