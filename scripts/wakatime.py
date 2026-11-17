@@ -82,6 +82,26 @@ def duration_text(value):
     return f'{hours} h {minutes} min' if hours else f'{minutes} min'
 
 
+def bar(percent, width=24):
+    filled = max(0, min(width, round(width * percent / 100)))
+    return '█' * filled + '░' * (width - filled)
+
+
+def code_block(title, rows):
+    total = sum(value for _, value in rows)
+    lines = [f'🔥 {title}:']
+    if not rows:
+        lines.append('No recorded activity')
+    for name, value in rows[:8]:
+        percent = value / total * 100 if total else 0
+        lines.append(f'{name[:22]:<22} {duration_text(value):<15} {bar(percent)} {percent:5.1f}%')
+    if len(rows) > 8:
+        other = sum(value for _, value in rows[8:])
+        percent = other / total * 100 if total else 0
+        lines.append(f'{"Others":<22} {duration_text(other):<15} {bar(percent)} {percent:5.1f}%')
+    return ['```text', *lines, '```']
+
+
 def card(title, rows, period):
     shown = rows[:6]
     if len(rows) > 6:
@@ -122,18 +142,18 @@ def markdown(data, groups):
         except (AttributeError, TypeError, ValueError):
             raise ValueError('WakaTime dates are invalid; existing output kept.') from None
     period = f'{dates[0]} – {dates[1]} (UTC)'
-    if not any(groups.values()):
-        return f'### 📊 WakaTime\n\n最近 7 天 · {period}。暂未采集到编程活动。', {}
-    lines = ['### 📊 WakaTime', '', f'最近 7 天 · {period}。仅展示语言、编辑器与操作系统汇总。', '']
+    total_seconds = sum(value for _, value in groups['languages'])
+    lines = ['### 📊 WakaTime', '']
+    if total_seconds:
+        lines.append(f'💻 **Coding Time: {duration_text(total_seconds)}** · 最近 7 天 · {period}')
+    else:
+        lines.append(f'最近 7 天 · {period}。暂未采集到编程活动。')
+    lines.extend(['', '仅展示 WakaTime 实际提供的语言、编辑器与操作系统汇总。', ''])
     for field, title in FIELDS:
         rows = groups[field]
-        total = sum(value for _, value in rows)
-        lines.extend([f'**{title}**', '', '| 名称 | 时长 | 占比 |', '| --- | ---: | ---: |'])
-        for name, value in rows:
-            label = html.escape(name).replace('|', '&#124;').replace('`', '&#96;')
-            lines.append(f'| {label} | {html.escape(duration_text(value))} | {value / total * 100:.1f}% |')
-        if not rows:
-            lines.append('| 暂无记录 | — | — |')
+        safe_rows = [(html.escape(name).replace('|', '&#124;').replace('`', '&#96;'), value)
+                     for name, value in rows]
+        lines.extend(code_block(title, safe_rows))
         lines.append('')
     cards = {filename: card('WakaTime · ' + field.title(), groups[field], period)
              for field, filename in CARDS.items()}
