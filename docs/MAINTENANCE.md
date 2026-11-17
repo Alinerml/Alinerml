@@ -9,7 +9,7 @@
 - 本仓库生成的最近 30 天贡献趋势、全年与历史贡献日历。
 - 公开仓库概览、关注者、评论反应、本人创建的 Issues/PR 状态、最近 Star、Star 趋势，以及精选公开项目 `minigo` 和 `tiktok`。精选卡不改变 GitHub 原生置顶。
 - 公开推送时段，以及折叠区域中的最近活动与 Discussions 统计。
-- WakaTime 自动更新入口；设置本人密钥后显示最近 7 天语言、编辑器与操作系统摘要。详见 [接入步骤](WAKATIME.md)。
+- WakaTime 与 GitHub 开发统计自动更新；详见 [接入步骤](WAKATIME.md)。
 
 未关联的社交、Stack Overflow、RepoBeats、Sponsors、Buy Me a Coffee 不显示占位按钮；博客保持关闭。未启用需要额外个人令牌的 Gists 和 Metrics achievements 插件。GitHub 原生成就由平台授予，不能通过 README 配置生成。
 
@@ -18,7 +18,7 @@
 | Actions 工作流 | 北京时间计划 | 更新内容 |
 | --- | --- | --- |
 | Reference profile metrics | 每天 08:00 | GitHub Metrics 卡片 |
-| Personal profile feeds | 每天 08:00 | WakaTime 摘要与图表 |
+| Personal profile feeds | 每天 08:00 | WakaTime、提交时段/星期与 AI 编码统计 |
 | Update profile visuals | 每天 09:23 | 贪吃蛇、公开统计、语言分布、3D 城市 |
 | Contribution calendar cards | 每天 09:35 | 30 天趋势、全年与历史贡献日历 |
 
@@ -36,7 +36,7 @@ GitHub 模块仅使用仓库自动提供的临时 `GITHUB_TOKEN`，无需新增 
 
 ## 修改内容
 
-编辑根目录 `README.md` 即可调整简介、技术标签与排版。标题使用 `readme-typing-svg.demolab.com`。WakaTime 的唯一一对 `START_SECTION:waka` / `END_SECTION:waka` 标记应保留在表格外，由工作流填充；缺少密钥时不展示。
+编辑根目录 `README.md` 即可调整简介、技术标签与排版。标题使用 `readme-typing-svg.demolab.com`。WakaTime 的唯一一对 `START_SECTION:waka` / `END_SECTION:waka` 标记应保留在表格外，由上游工作流填充。OAuth 与 `GH_TOKEN` 配置见 [接入步骤](WAKATIME.md)。
 
 长期没有活动的公开仓库可能被 GitHub 暂停定时工作流；在 Actions 重新启用即可。
 
@@ -49,6 +49,7 @@ GitHub 模块仅使用仓库自动提供的临时 `GITHUB_TOKEN`，无需新增 
 - [GitHub Readme Stats Action](https://github.com/stats-organization/github-readme-stats-action)：生成公开统计和语言卡片。
 - [Metrics](https://github.com/lowlighter/metrics)：公开 GitHub 活动卡片。
 - [WakaTime API](https://wakatime.com/developers)：本人编程时长摘要。
+- [waka-readme-stats](https://github.com/anmol098/waka-readme-stats)：WakaTime、提交规律和可用 AI 编码数据。
 - [Shields.io](https://shields.io)：技术与导航徽章。
 
 装饰图、徽章、笑话、语录和连续贡献统计仍使用外部服务；基础统计、活动趋势与日历由仓库自动生成。
