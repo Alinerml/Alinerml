@@ -147,7 +147,7 @@ def markdown(data, groups):
     if total_seconds:
         lines.append(f'💻 **Coding Time: {duration_text(total_seconds)}** · 最近 7 天 · {period}')
     else:
-        lines.append(f'💻 **Coding Time: 暂无记录** · 最近 7 天 · {period}')
+        lines.append(f'💻 **Coding Time: 暂无记录** · 最近 7 天 · {period}。暂未采集到编程活动。')
     lines.extend(['', '仅展示 WakaTime 实际提供的语言、编辑器与操作系统汇总。', ''])
     for field, title in FIELDS:
         rows = groups[field]
