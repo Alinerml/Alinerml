@@ -50,49 +50,7 @@
 <!--START_SECTION:waka-->
 ### 📊 WakaTime
 
-最近 7 天 · 2026-10-24 – 2026-10-31 (UTC)。仅展示语言、编辑器与操作系统汇总。
-
-**语言**
-
-| 名称 | 时长 | 占比 |
-| --- | ---: | ---: |
-| Java Properties | 1 h 32 min | 25.5% |
-| Markdown | 1 h 30 min | 24.8% |
-| JavaScript | 36 min | 9.9% |
-| TypeScript | 33 min | 9.1% |
-| CSS | 23 min | 6.4% |
-| Image (png) | 19 min | 5.2% |
-| Other | 18 min | 5.0% |
-| XML | 15 min | 4.3% |
-| HTML | 11 min | 3.1% |
-| JSON | 9 min | 2.6% |
-| INI | 5 min | 1.4% |
-| Git Config | 4 min | 1.2% |
-| Groovy | 3 min | 0.9% |
-| PowerShell | 1 min | 0.3% |
-| YAML | 1 min | 0.3% |
-| Image (svg) | &lt; 1 min | 0.0% |
-| OASv2-json | &lt; 1 min | 0.0% |
-| Text | &lt; 1 min | 0.0% |
-
-**编辑器**
-
-| 名称 | 时长 | 占比 |
-| --- | ---: | ---: |
-| Opencode Desktop | 4 h 7 min | 68.0% |
-| OpenCode | 1 h 54 min | 31.4% |
-| Opencode Cli | 2 min | 0.6% |
-
-**操作系统**
-
-| 名称 | 时长 | 占比 |
-| --- | ---: | ---: |
-| Windows | 6 h 4 min | 100.0% |
-
-<p align="center">
-  <img src="profile/wakatime-languages.svg" width="48%" alt="WakaTime 最近 7 天语言统计" />
-  <img src="profile/wakatime-editors.svg" width="48%" alt="WakaTime 最近 7 天编辑器统计" />
-</p>
+最近 7 天 · 2026-11-09 – 2026-11-16 (UTC)。暂未采集到编程活动。
 <!--END_SECTION:waka-->
 
 
