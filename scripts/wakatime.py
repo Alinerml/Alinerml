@@ -143,10 +143,11 @@ def markdown(data, groups):
             raise ValueError('WakaTime dates are invalid; existing output kept.') from None
     period = f'{dates[0]} – {dates[1]} (UTC)'
     total_seconds = sum(value for _, value in groups['languages'])
-    if not total_seconds:
-        return f'### 📊 WakaTime\n\n最近 7 天 · {period}。暂未采集到编程活动。', {}
     lines = ['### 📊 WakaTime', '']
-    lines.append(f'💻 **Coding Time: {duration_text(total_seconds)}** · 最近 7 天 · {period}')
+    if total_seconds:
+        lines.append(f'💻 **Coding Time: {duration_text(total_seconds)}** · 最近 7 天 · {period}')
+    else:
+        lines.append(f'💻 **Coding Time: 暂无记录** · 最近 7 天 · {period}')
     lines.extend(['', '仅展示 WakaTime 实际提供的语言、编辑器与操作系统汇总。', ''])
     for field, title in FIELDS:
         rows = groups[field]
@@ -154,12 +155,13 @@ def markdown(data, groups):
                      for name, value in rows]
         lines.extend(code_block(title, safe_rows))
         lines.append('')
-    cards = {filename: card('WakaTime · ' + field.title(), groups[field], period)
-             for field, filename in CARDS.items()}
-    lines.extend(['<p align="center">',
-                  '  <img src="profile/wakatime-languages.svg" width="48%" alt="WakaTime 最近 7 天语言统计" />',
-                  '  <img src="profile/wakatime-editors.svg" width="48%" alt="WakaTime 最近 7 天编辑器统计" />',
-                  '</p>'])
+    cards = ({filename: card('WakaTime · ' + field.title(), groups[field], period)
+              for field, filename in CARDS.items()} if total_seconds else {})
+    if cards:
+        lines.extend(['<p align="center">',
+                      '  <img src="profile/wakatime-languages.svg" width="48%" alt="WakaTime 最近 7 天语言统计" />',
+                      '  <img src="profile/wakatime-editors.svg" width="48%" alt="WakaTime 最近 7 天编辑器统计" />',
+                      '</p>'])
     return '\n'.join(lines), cards
 
 
