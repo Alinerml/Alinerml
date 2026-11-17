@@ -1,6 +1,5 @@
 """Publish only language/editor/OS aggregates from the authenticated WakaTime user."""
 
-import base64
 from datetime import datetime
 import html
 import json
@@ -21,10 +20,10 @@ FIELDS = (('languages', '语言'), ('editors', '编辑器'), ('operating_systems
 CARDS = {'languages': 'wakatime-languages.svg', 'editors': 'wakatime-editors.svg'}
 
 
-def fetch_stats(api_key):
+def fetch_stats(access_token):
     # Keep credentials out of URLs, exception messages, and saved API responses.
     request = Request(API_URL, headers={
-        'Authorization': 'Basic ' + base64.b64encode(api_key.encode()).decode(),
+        'Authorization': 'Bearer ' + access_token,
         'Accept': 'application/json',
         'User-Agent': 'Alinerml-profile-wakatime',
     })
@@ -167,12 +166,12 @@ def update(root, data):
 
 
 def main():
-    api_key = os.environ.get('WAKATIME_API_KEY', '').strip()
-    if not api_key:
-        print('WAKATIME_API_KEY is not configured; WakaTime update skipped.')
+    access_token = os.environ.get('WAKATIME_ACCESS_TOKEN', '').strip()
+    if not access_token:
+        print('WAKATIME_ACCESS_TOKEN is not configured; WakaTime update skipped.')
         return 0
     try:
-        update(Path(__file__).resolve().parents[1], fetch_stats(api_key))
+        update(Path(__file__).resolve().parents[1], fetch_stats(access_token))
     except (ValueError, OSError) as error:
         # ValueError messages above are fixed strings, never API error bodies.
         print(str(error) if isinstance(error, ValueError) else 'Could not save WakaTime output.', file=sys.stderr)

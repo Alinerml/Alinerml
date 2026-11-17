@@ -41,12 +41,12 @@ class WakaTimeTests(unittest.TestCase):
         network.assert_not_called()
         update.assert_not_called()
 
-    def test_authenticated_request_keeps_key_out_of_url(self):
+    def test_authenticated_request_uses_bearer_token_and_keeps_it_out_of_url(self):
         with patch('wakatime.urlopen', return_value=response(sample())) as network:
-            data = wakatime.fetch_stats('test-only-api-key')
+            data = wakatime.fetch_stats('test-only-oauth-token')
         request = network.call_args.args[0]
         self.assertEqual(request.full_url, wakatime.API_URL)
-        self.assertTrue(request.get_header('Authorization').startswith('Basic '))
+        self.assertEqual(request.get_header('Authorization'), 'Bearer test-only-oauth-token')
         self.assertTrue(data['is_up_to_date'])
 
     def test_stale_stats_retry_then_accept_fresh_result(self):
@@ -66,14 +66,14 @@ class WakaTimeTests(unittest.TestCase):
 
     def test_http_error_does_not_log_response_body_or_credentials(self):
         error = HTTPError('https://example.invalid/private-key', 401, 'secret-body', {}, None)
-        with patch.dict('os.environ', {'WAKATIME_API_KEY': 'test-only-key'}), \
+        with patch.dict('os.environ', {'WAKATIME_ACCESS_TOKEN': 'test-only-token'}), \
                 patch('wakatime.urlopen', side_effect=error), patch('wakatime.update') as update, \
                 contextlib.redirect_stderr(io.StringIO()) as log:
             self.assertEqual(wakatime.main(), 1)
         self.assertIn('HTTP 401', log.getvalue())
         self.assertNotIn('private-key', log.getvalue())
         self.assertNotIn('secret-body', log.getvalue())
-        self.assertNotIn('test-only-key', log.getvalue())
+        self.assertNotIn('test-only-token', log.getvalue())
         update.assert_not_called()
 
     def test_generated_files_only_include_allowed_fields_and_valid_xml(self):
